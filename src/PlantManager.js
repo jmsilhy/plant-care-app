@@ -319,7 +319,7 @@ function PlantManager() {
           {/* Header */}
           <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-green-800 mb-1 md:mb-0">
+              <h1 className="text-2xl md:text-3xl font-medium text-green-800 mb-1 md:mb-0 tracking-tight">
                 🌿 My Tree Collection
               </h1>
               {profile && (
@@ -331,14 +331,14 @@ function PlantManager() {
                 <>
                   <button
                     onClick={() => setShowTimeline(!show_timeline)}
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
                   >
                     <span className="hidden sm:inline">{show_timeline ? 'Hide Timeline' : '📅 Care Timeline'}</span>
                     <span className="sm:hidden">📅</span>
                   </button>
                   <button
                     onClick={() => setShowAddForm(!show_add_form)}
-                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
+                    className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
                   >
                     <span className="hidden sm:inline">{show_add_form ? 'Cancel' : '+ Add Plant'}</span>
                     <span className="sm:hidden">+</span>
@@ -347,14 +347,14 @@ function PlantManager() {
               )}
               <button
                 onClick={toggleBulkCare}
-                className={`${bulk_care_mode ? 'bg-orange-600 hover:bg-orange-700' : 'bg-purple-600 hover:bg-purple-700'} text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base`}
+                className={`${bulk_care_mode ? 'bg-orange-600 hover:bg-orange-700' : 'bg-purple-600 hover:bg-purple-700'} text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm md:text-base`}
               >
                 <span className="hidden sm:inline">{bulk_care_mode ? 'Exit Bulk Mode' : '⚡ Bulk Care'}</span>
                 <span className="sm:hidden">⚡</span>
               </button>
               <button
                 onClick={signOut}
-                className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
+                className="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm md:text-base"
               >
                 <span className="hidden sm:inline">Sign Out</span>
                 <span className="sm:hidden">🚪</span>
@@ -473,7 +473,7 @@ function PlantManager() {
               <p className="text-gray-500 text-lg mb-4">No plants in your collection yet</p>
               <button
                 onClick={() => setShowAddForm(true)}
-                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
               >
                 🌱 Add Your First Plant
               </button>
